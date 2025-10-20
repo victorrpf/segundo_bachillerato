@@ -50,6 +50,13 @@ Breve explicación:
 - Conversión explícita entre tipos: `str()`, `int()`, `float()` y funciones como `round()` para redondear.
 - Constantes por convención: nombres en MAYÚSCULAS (p. ej. `PI = 3.14`), aunque Python no impone inmutabilidad.
 
+Notas adicionales (según `04_variables_constantes.py`):
+
+- `type(obj)` permite ver el tipo que Python infiere en tiempo de ejecución (p. ej. `type("María")` -> `<class 'str'>`).
+- Tipo booleano: `True` y `False` son valores del tipo `bool`. En el script aparece `aprobado = True` y se imprime su tipo con `type(aprobado)`.
+- `None` es el valor que representa 'sin valor' (similar a `null` en otros lenguajes). Su tipo es `NoneType` (`type(None)`).
+- Ejemplos concretos del script: se imprimen los valores y a continuación los tipos detectados por Python para `nombre`, `edad`, `nota_media`, `aprobado`, `sin_valor`, así como para las constantes `PI` y `MAX_ALUMNOS`.
+
 05_arrays.py
 
 Contenido: listas en Python (creación, acceso, métodos y comprehensions).
