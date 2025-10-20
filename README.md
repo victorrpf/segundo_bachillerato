@@ -1,6 +1,6 @@
 # Ejemplos de código Python para 2º de Bachillerato
 
-Carpetas por UD con scripts de ejemplo organizados según el índice de los apuntes.
+Carpetas por UDs con scripts de ejemplo organizados según el índice de los apuntes.
 
 UD2 - Archivos incluidos:
 
