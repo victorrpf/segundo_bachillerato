@@ -3,23 +3,33 @@
 
 01_caracteres.py
 
-Contenido: ejemplos de cadenas y caracteres, incluyendo escapes (`\n`, `\t`), comillas y conversión entre caracteres y códigos (`ord`/`chr`).
+Contenido: ejemplos de cadenas y caracteres, incluyendo escapes (`\n`, `\t`), comillas, conversión entre caracteres y códigos (`ord`/`chr`) y uso de backspace (`\b`).
 
-Breve explicación:
+Explicación adaptada al contenido actual del script:
 
-- Las cadenas en Python pueden contener caracteres especiales representados por secuencias de escape. Por ejemplo, `\n` inserta un salto de línea y `\t` una tabulación.
-- Para mostrar comillas dentro de una cadena usamos comillas opuestas o escapamos las que coinciden con el delimitador.
-- `ord(c)` devuelve el código Unicode de `c` y `chr(n)` devuelve el carácter cuyo código es `n`.
+- Salto de línea (`\n`) y tabulación (`\t`): `print("Hola\nMundo\t➡\tTabulado")` muestra "Mundo" en la línea siguiente y usa una tabulación.
+- Comillas: se puede incluir `'` dentro de una cadena entre dobles comillas y viceversa; si hace falta, se escapan con `\`.
+- `ord(c)` y `chr(n)`: permiten convertir entre carácter y su código Unicode/ASCII.
+- Backspace (`\b`): el script muestra `print("Backspace: 123456\b78")`.
+	- `\b` es un carácter de control (backspace) que en la salida de la terminal mueve el cursor una posición atrás; el comportamiento exacto depende del terminal. En muchas consolas `123456\b78` aparecerá visualmente como `12378` porque el `\b` retrocede sobre el `6` y luego se escribe `78`.
 
 02_identificadores.py
 
-Contenido: reglas y convenciones para nombrar identificadores en Python.
+Contenido: ejemplos y reglas extraídas del script actual.
 
-Breve explicación:
+Explicación adaptada al contenido del script:
 
-- Un identificador debe empezar por letra o guion bajo, no por cifra. Puede contener letras, dígitos y guion bajo.
-- Evita usar nombres que colisionen con palabras reservadas o funciones integradas (p. ej. `list`, `str`).
-- Convenciones: `snake_case` para variables y funciones, `PascalCase` para clases, MAYÚSCULAS para constantes.
+- Ejemplos válidos en Python (adaptados desde la tabla en C): `Numero`, `dia_del_mes`, `PINGUINO1`, `_ciudad`, `Z`.
+- Elementos no válidos o problemáticos: no se pueden usar identificadores que comiencen por dígitos (p. ej. `123`), no se permiten espacios ni símbolos como `*` en los nombres, y aunque Python admite Unicode (`ñ`, acentos), su uso no es recomendable en código didáctico por cuestiones de portabilidad.
+- Reglas clave:
+	1. No puede empezar por dígito.
+	2. Solo letras, dígitos y guion bajo en identificadores válidos (sin espacios ni símbolos).
+	3. Python admite identificadores Unicode, pero suele evitarse cuando se comparte código.
+
+Recomendaciones pedagógicas (incluidas en el script):
+- Usar `snake_case` para variables y funciones.
+- Reservar MAYÚSCULAS para constantes.
+
 
 03_palabras_reservadas.py
 
