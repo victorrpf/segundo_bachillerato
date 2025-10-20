@@ -85,6 +85,19 @@ Breve explicación:
 - Los comentarios de línea usan `#` y se ignoran en la ejecución. Los docstrings (triple comillas) documentan módulos, funciones o clases.
 - Es buena práctica documentar las funciones con un docstring corto que explique su propósito y parámetros.
 
+Notas adicionales (según `06_comentarios.py`):
+
+- Comentario de una sola línea: comienza con `#` y sirve para explicar una línea o una idea breve.
+	- Ejemplo: `# Comentario de una sola línea`
+- Docstrings / cadenas multilínea: usando `""" ... """` o `''' ... '''` puedes escribir texto en varias líneas.
+	- Si colocas una docstring justo al inicio de un módulo, función o clase, Python la asocia como documentación (`__doc__`).
+	- Ejemplo de uso en un módulo o función para describir su propósito.
+- Comentarios inline: puedes añadir un comentario al final de la línea de código para aclarar una variable o una expresión.
+	- Ejemplo: `valor = 10  # este comentario explica la variable 'valor'`
+
+Recomendación:
+- Enseña `#` para comentarios y docstrings para documentación formal. Evita usar docstrings como sustituto de comentarios de bloque salvo cuando realmente documentes la API.
+
 07_expresiones.py
 
 Contenido: expresiones y operadores aritméticos y lógicos.
