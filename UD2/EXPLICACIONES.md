@@ -66,16 +66,12 @@ Puntos clave:
 Este script explora cómo declarar y usar funciones en Python. Incluye:
 
 - Definición simple de función (`saludar`).
-- Función con lógica más compleja (`es_primo`) que comprueba si un número es primo.
 - Uso de funciones de orden superior: `aplicar_funcion_lista` que recibe una función y una lista.
 
 Puntos clave:
 
 - Las funciones agrupan comportamiento y facilitan la reutilización y las pruebas.
 - Las lambdas son funciones anónimas útiles para operaciones pequeñas y puntuales.
-- Separar la lógica en funciones pequeñas mejora la legibilidad.
-
- 
 
 05_colecciones.py
 
