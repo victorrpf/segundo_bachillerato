@@ -9,19 +9,18 @@ Archivos incluidos:
 - `02_entrada_salida.py`: Uso de `input()` y `print()` con validación básica.
 - `03_control_flujo.py`: Ejemplos de `if/elif/else`, `for` y `while`.
 
-Cómo ejecutar en Windows (PowerShell):
+Cómo ejecutar desde Visual Studio Code en LliureX
 
-```powershell
-# Navegar a la carpeta UD2
-cd 'c:\Users\victor\Documents\vs_projects\segundo_bachillerato\UD2'
+Abre la carpeta del proyecto en Visual Studio Code. Usa el terminal integrado (Ver > Terminal o Ctrl+`) para ejecutar los scripts. Si no estás en la carpeta `UD2`, sitúate en ella antes de ejecutar los comandos (`cd ruta/al/proyecto/UD2`).
 
-# Ejecutar un script
-python 00_hola_mundo.py
-python 01_variables_tipos.py
-python 02_entrada_salida.py
-python 03_control_flujo.py
+```bash
+# Ejecutar los scripts desde la terminal integrada
+python3 00_hola_mundo.py
+python3 01_variables_tipos.py
+python3 02_entrada_salida.py
+python3 03_control_flujo.py
 ```
 
 Notas:
-- Asegúrate de tener Python 3 instalado y en la variable PATH. En PowerShell, `python --version` debe mostrar la versión.
-- Los scripts usan UTF-8 para soportar acentos y caracteres especiales.
+- En LliureX suele usarse `python3`; comprueba la versión con `python3 --version`.
+- Los scripts están guardados con codificación UTF-8 para soportar acentos y caracteres especiales.
