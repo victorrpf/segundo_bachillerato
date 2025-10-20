@@ -25,8 +25,6 @@ Contenido y explicación línea por línea:
     - `chr(65)` devuelve el carácter asociado al código 65.
     - Este ejemplo muestra la relación entre caracteres y sus códigos numéricos.
 
-Ejercicio sugerido: Modifica el script para que pida al usuario un carácter y muestre su código con `ord()`, y luego pida un número y muestre el carácter con `chr()`.
-
 01_variables_tipos.py
 
 Este script muestra cómo se definen variables en Python y los tipos básicos: cadenas (`str`), enteros (`int`), números con decimales (`float`) y booleanos (`bool`). Enseña también la función `type()` para comprobar el tipo de una variable y ejemplos de conversión de tipos con `str()`, `int()` y `round()`.
@@ -37,7 +35,7 @@ Puntos clave explicados en párrafos:
 - Diferencia entre `int` y `float`: los enteros no tienen parte fraccionaria, los `float` sí. Convertir `float` a `int` trunca la parte decimal.
 - Las cadenas se pueden concatenar con `+` y formatear con f-strings (`f"...{var}..."`).
 
-Ejercicio corto: Cambia los valores de `nombre`, `edad` y `nota_media`. Predice la salida y luego ejecuta el script.
+ 
 
 02_entrada_salida.py
 
@@ -49,7 +47,7 @@ Puntos clave:
 - Uso de `try/except ValueError` para capturar entradas no numéricas.
 - Separación de lógica en funciones (`main()` y `pedir_entero()`) para mejorar la legibilidad.
 
-Ejercicio corto: Modifica el script para que también pida la altura en cm y calcule el IMC (índice de masa corporal) simple.
+ 
 
 03_control_flujo.py
 
@@ -61,7 +59,7 @@ Puntos clave:
 - `for` itera sobre secuencias (listas, tuplas, cadenas). `enumerate()` es útil cuando necesitamos el índice.
 - `while` repite mientras la condición sea verdadera; hay que evitar bucles infinitos.
 
-Ejercicio corto: Escribe una función que reciba una lista de notas (float) y calcule la nota media, devolviendo "Aprobado" o "Suspenso" según la media.
+ 
 
 04_funciones.py
 
@@ -77,7 +75,7 @@ Puntos clave:
 - Las lambdas son funciones anónimas útiles para operaciones pequeñas y puntuales.
 - Separar la lógica en funciones pequeñas mejora la legibilidad.
 
-Ejercicio corto: Escribe una función `factorial(n)` que calcule el factorial de `n` y otra que use `factorial` para calcular combinaciones (n choose k).
+ 
 
 05_colecciones.py
 
@@ -89,7 +87,7 @@ Puntos clave:
 - Tuplas: uso cuando no queremos que los datos cambien; se pueden desempaquetar en variables.
 - Diccionarios: acceso por clave, iteración con `.items()` y utilidades comunes.
 
-Ejercicio corto: Dada una lista de palabras, crea un diccionario que cuente la frecuencia de cada palabra (histograma).
+ 
 
 Instrucciones de ejecución (Visual Studio Code / LliureX)
 
