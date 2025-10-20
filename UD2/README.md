@@ -15,12 +15,14 @@ Abre la carpeta del proyecto en Visual Studio Code. Usa el terminal integrado (V
 
 ```bash
 # Ejecutar los scripts desde la terminal integrada
-python3 00_hola_mundo.py
-python3 01_variables_tipos.py
-python3 02_entrada_salida.py
-python3 03_control_flujo.py
+python 00_hola_mundo.py
+python 01_variables_tipos.py
+python 02_entrada_salida.py
+python 03_control_flujo.py
+python 04_funciones.py
+python 05_colecciones.py
 ```
 
 Notas:
-- En LliureX suele usarse `python3`; comprueba la versión con `python3 --version`.
+- Comprueba la versión de Python con `python --version`.
 - Los scripts están guardados con codificación UTF-8 para soportar acentos y caracteres especiales.
