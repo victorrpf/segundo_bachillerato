@@ -1,8 +1,8 @@
-# Ejemplos para 2º de Bachillerato — UD2
+# Ejemplos de código Python para 2º de Bachillerato
 
-Carpeta con scripts de ejemplo organizados según el índice de los apuntes.
+Carpetas por UD con scripts de ejemplo organizados según el índice de los apuntes.
 
-Archivos incluidos (correspondencia con el índice):
+UD2 - Archivos incluidos:
 
 - `01_caracteres.py`: Caracteres, comillas y conversiones (Hola Mundo inicial).
 - `02_identificadores.py`: Identificadores válidos y convenciones.
@@ -13,23 +13,6 @@ Archivos incluidos (correspondencia con el índice):
 - `07_expresiones.py`: Expresiones y operadores.
 - `08_sentencias.py`: Sentencias (condicionales y bucles).
 - `09_funciones.py`: Introducción a funciones.
-
-Cómo ejecutar desde Visual Studio Code en LliureX
-
-Abre la carpeta del proyecto en Visual Studio Code. Usa el terminal integrado (Ver > Terminal o Ctrl+`) para ejecutar los scripts. Si no estás en la carpeta `UD2`, sitúate en ella antes de ejecutar los comandos (`cd ruta/al/proyecto/UD2`).
-
-```bash
-# Ejecutar los scripts desde la terminal integrada
-python 01_caracteres.py
-python 02_identificadores.py
-python 03_palabras_reservadas.py
-python 04_variables_constantes.py
-python 05_arrays.py
-python 06_comentarios.py
-python 07_expresiones.py
-python 08_sentencias.py
-python 09_funciones.py
-```
 
 Notas:
 - Comprueba la versión de Python con `python --version`.
