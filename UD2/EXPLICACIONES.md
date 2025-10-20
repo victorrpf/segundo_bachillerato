@@ -66,6 +66,16 @@ Breve explicación:
 - Listas son colecciones ordenadas y mutables. Operaciones comunes: `append`, `pop`, indexación y slicing.
 - Comprehensions permiten construir listas de forma compacta: `[x*x for x in range(5)]`.
 
+Notas adicionales (según `05_arrays.py`):
+
+- Declaración simple: `frutas = ["plátano", "fresa", "cereza"]` crea una lista con tres elementos.
+- `append(x)` añade `x` al final de la lista: `frutas.append("naranja")`.
+- Indexación: `frutas[3]` accede al cuarto elemento (los índices empiezan en 0).
+- Heterogeneidad de tipos: las listas en Python pueden contener elementos de distinto tipo; por ejemplo, `frutas.append(1)` añade un entero a la lista de strings. Esto es permitido por diseño pero conviene evitar mezclar tipos si luego se procesan los elementos suponiendo un tipo concreto.
+
+Consejo didáctico:
+- Para mantener código claro, procura que las listas sean homogéneas por convención (p. ej. `List[str]`), o valida/convierte los elementos al insertarlos.
+
 06_comentarios.py
 
 Contenido: comentarios de línea y docstrings.
