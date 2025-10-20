@@ -36,6 +36,34 @@ Puntos clave:
 
 Ejercicio corto: Escribe una función que reciba una lista de notas (float) y calcule la nota media, devolviendo "Aprobado" o "Suspenso" según la media.
 
+04_funciones.py
+
+Este script explora cómo declarar y usar funciones en Python. Incluye:
+
+- Definición simple de función (`saludar`).
+- Función con lógica más compleja (`es_primo`) que comprueba si un número es primo.
+- Uso de funciones de orden superior: `aplicar_funcion_lista` que recibe una función y una lista.
+
+Puntos clave:
+
+- Las funciones agrupan comportamiento y facilitan la reutilización y las pruebas.
+- Las lambdas son funciones anónimas útiles para operaciones pequeñas y puntuales.
+- Separar la lógica en funciones pequeñas mejora la legibilidad.
+
+Ejercicio corto: Escribe una función `factorial(n)` que calcule el factorial de `n` y otra que use `factorial` para calcular combinaciones (n choose k).
+
+05_colecciones.py
+
+Contiene ejemplos de las principales colecciones en Python: listas (mutables y con comprehensions), tuplas (inmutables) y diccionarios (mapas clave->valor).
+
+Puntos clave:
+
+- Listas: añadir, eliminar y recorrer elementos; comprehensions para construir nuevas listas.
+- Tuplas: uso cuando no queremos que los datos cambien; se pueden desempaquetar en variables.
+- Diccionarios: acceso por clave, iteración con `.items()` y utilidades comunes.
+
+Ejercicio corto: Dada una lista de palabras, crea un diccionario que cuente la frecuencia de cada palabra (histograma).
+
 00_hola_mundo.py
 
 Este script es un primer ejemplo sencillo que muestra salida por pantalla usando `print()` y demuestra:
