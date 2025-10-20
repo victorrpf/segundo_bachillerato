@@ -1,13 +1,18 @@
 # Ejemplos para 2º de Bachillerato — UD2
 
-Carpeta con scripts de ejemplo para los apuntes: variables y tipos, entrada/salida y control de flujo.
+Carpeta con scripts de ejemplo organizados según el índice de los apuntes.
 
-Archivos incluidos:
+Archivos incluidos (correspondencia con el índice):
 
-- `00_hola_mundo.py`: Primer script "Hola Mundo" con caracteres especiales, comillas y ejemplos de `ord()`/`chr()`.
-- `01_variables_tipos.py`: Asignación, tipos, conversión y operaciones con cadenas.
-- `02_entrada_salida.py`: Uso de `input()` y `print()` con validación básica.
-- `03_control_flujo.py`: Ejemplos de `if/elif/else`, `for` y `while`.
+- `01_caracteres.py`: Caracteres, comillas y conversiones (Hola Mundo inicial).
+- `02_identificadores.py`: Identificadores válidos y convenciones.
+- `03_palabras_reservadas.py`: Palabras reservadas del lenguaje.
+- `04_variables_constantes.py`: Variables y constantes.
+- `05_arrays.py`: Arrays / listas.
+- `06_comentarios.py`: Comentarios y docstrings.
+- `07_expresiones.py`: Expresiones y operadores.
+- `08_sentencias.py`: Sentencias (condicionales y bucles).
+- `09_funciones.py`: Introducción a funciones.
 
 Cómo ejecutar desde Visual Studio Code en LliureX
 
@@ -15,12 +20,15 @@ Abre la carpeta del proyecto en Visual Studio Code. Usa el terminal integrado (V
 
 ```bash
 # Ejecutar los scripts desde la terminal integrada
-python 00_hola_mundo.py
-python 01_variables_tipos.py
-python 02_entrada_salida.py
-python 03_control_flujo.py
-python 04_funciones.py
-python 05_colecciones.py
+python 01_caracteres.py
+python 02_identificadores.py
+python 03_palabras_reservadas.py
+python 04_variables_constantes.py
+python 05_arrays.py
+python 06_comentarios.py
+python 07_expresiones.py
+python 08_sentencias.py
+python 09_funciones.py
 ```
 
 Notas:

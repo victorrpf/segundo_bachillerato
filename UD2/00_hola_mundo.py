@@ -1,3 +1,10 @@
+# Este archivo fue renombrado/migrado.
+# Contenido movido a `01_caracteres.py` según el índice de los apuntes.
+print("[placeholder] Ver 01_caracteres.py para el ejemplo inicial 'Hola Mundo' y caracteres.")
+# Ejemplos sencillos de expresiones regulares (cuantificadores +, *, ?)
+import re
+
+texts = ['a', 'aa', 'b', 'baaa', '']
 # Hola Mundo con caracteres especiales
 print("Hola\nMundo\t➡\tTabulado");
 
@@ -6,6 +13,7 @@ print("Comillas: 'simple', \"doble\", `invertida` (como texto)");
 
 # Códigos ASCII y conversión
 print("Código ASCII de 'A':", ord('A'), "⇄ chr(65):", chr(65))
+
 # Ejemplos sencillos de expresiones regulares (cuantificadores +, *, ?)
 import re
 

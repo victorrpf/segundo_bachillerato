@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+"""
+08_sentencias.py
+
+Ejemplos de sentencias: condicionales y bucles.
+"""
+
+edad = 20
+if edad < 18:
+    print("Menor de edad")
+elif edad < 65:
+    print("Adulto")
+else:
+    print("Persona mayor")
+
+for i in range(3):
+    print("Iteración:", i)
+
+count = 0
+while count < 3:
+    print("while:", count)
+    count += 1
