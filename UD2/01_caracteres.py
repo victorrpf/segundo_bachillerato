@@ -15,3 +15,8 @@ print()
 
 # Códigos ASCII y conversión
 print("Código ASCII de 'A':", ord('A'), "⇄ chr(65):", chr(65))
+print()
+
+# Retroceso con backspace que elimina caracteres previos
+print("Backspace:")
+print("123456\b78")
