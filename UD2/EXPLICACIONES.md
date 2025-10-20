@@ -1,4 +1,31 @@
+
 # Explicaciones — UD2 (Variables, E/S y Control)
+
+00_hola_mundo.py
+
+Este script es un primer ejemplo sencillo que muestra salida por pantalla usando `print()` y demuestra:
+
+- Uso de caracteres especiales como salto de línea (`\n`) y tabulación (`\t`).
+- Cómo incluir comillas simples, dobles y el carácter de acento grave (backtick) dentro de cadenas.
+- Uso de funciones `ord()` y `chr()` para convertir entre caracteres y sus códigos Unicode/ASCII.
+
+Contenido y explicación línea por línea:
+
+1. `print("Hola\nMundo\t➡\tTabulado");`
+    - `\n` inserta un salto de línea, por eso la palabra "Mundo" aparece en la línea siguiente.
+    - `\t` inserta una tabulación. El carácter `➡` es solo un ejemplo de un símbolo Unicode y mostrará correctamente si la consola soporta UTF-8.
+    - Nota: el punto y coma `;` al final de la línea no es necesario en Python pero no provoca error; puede eliminarse para estilo más "pythónico".
+
+2. `print("Comillas: 'simple', \"doble\", `invertida` (como texto)");`
+    - Muestra cómo escribir comillas simples y dobles dentro de una cadena. Las comillas dobles que rodean la cadena permiten usar `'` sin escapar.
+    - En este ejemplo hay backticks (acento grave) dentro de la cadena; si se quisiera usar backticks en el código fuente tal cual, no hace falta escaparlos.
+
+3. `print("Código ASCII de 'A':", ord('A'), "⇄ chr(65):", chr(65))`
+    - `ord('A')` devuelve el código entero correspondiente al carácter 'A' (65 en ASCII/Unicode).
+    - `chr(65)` devuelve el carácter asociado al código 65.
+    - Este ejemplo muestra la relación entre caracteres y sus códigos numéricos.
+
+Ejercicio sugerido: Modifica el script para que pida al usuario un carácter y muestre su código con `ord()`, y luego pida un número y muestre el carácter con `chr()`.
 
 01_variables_tipos.py
 
@@ -63,32 +90,6 @@ Puntos clave:
 - Diccionarios: acceso por clave, iteración con `.items()` y utilidades comunes.
 
 Ejercicio corto: Dada una lista de palabras, crea un diccionario que cuente la frecuencia de cada palabra (histograma).
-
-00_hola_mundo.py
-
-Este script es un primer ejemplo sencillo que muestra salida por pantalla usando `print()` y demuestra:
-
-- Uso de caracteres especiales como salto de línea (`\n`) y tabulación (`\t`).
-- Cómo incluir comillas simples, dobles y el carácter de acento grave (backtick) dentro de cadenas.
-- Uso de funciones `ord()` y `chr()` para convertir entre caracteres y sus códigos Unicode/ASCII.
-
-Contenido y explicación línea por línea:
-
-1. `print("Hola\nMundo\t➡\tTabulado");`
-	- `\n` inserta un salto de línea, por eso la palabra "Mundo" aparece en la línea siguiente.
-	- `\t` inserta una tabulación. El carácter `➡` es solo un ejemplo de un símbolo Unicode y mostrará correctamente si la consola soporta UTF-8.
-	- Nota: el punto y coma `;` al final de la línea no es necesario en Python pero no provoca error; puede eliminarse para estilo más "pythónico".
-
-2. `print("Comillas: 'simple', \"doble\", `invertida` (como texto)");`
-	- Muestra cómo escribir comillas simples y dobles dentro de una cadena. Las comillas dobles que rodean la cadena permiten usar `'` sin escapar.
-	- En este ejemplo hay backticks (acento grave) dentro de la cadena; si se quisiera usar backticks en el código fuente tal cual, no hace falta escaparlos.
-
-3. `print("Código ASCII de 'A':", ord('A'), "⇄ chr(65):", chr(65))`
-	- `ord('A')` devuelve el código entero correspondiente al carácter 'A' (65 en ASCII/Unicode).
-	- `chr(65)` devuelve el carácter asociado al código 65.
-	- Este ejemplo muestra la relación entre caracteres y sus códigos numéricos.
-
-Ejercicio sugerido: Modifica el script para que pida al usuario un carácter y muestre su código con `ord()`, y luego pida un número y muestre el carácter con `chr()`.
 
 Instrucciones de ejecución (Visual Studio Code / LliureX)
 
