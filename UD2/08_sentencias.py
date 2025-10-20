@@ -6,8 +6,12 @@ elif edad < 65:
 else:
     print("Persona mayor")
 
+print()
+
 for i in range(3):
     print("Iteración:", i)
+
+print()
 
 count = 0
 while count < 3:
