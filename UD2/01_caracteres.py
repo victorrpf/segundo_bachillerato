@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-01_caracteres.py
-
-Ejemplos sobre caracteres, comillas y conversiones básicas.
-"""
-
 # Hola Mundo con caracteres especiales
 print("Hola\nMundo\t➡\tTabulado")
 print()

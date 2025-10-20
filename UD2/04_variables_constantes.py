@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-04_variables_constantes.py
-
-Ejemplos de variables y constantes en Python.
-"""
-
 # Variables (mutables por reasignación)
 nombre = "María"
 edad = 17

@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-08_sentencias.py
-
-Ejemplos de sentencias: condicionales y bucles.
-"""
-
 edad = 20
 if edad < 18:
     print("Menor de edad")

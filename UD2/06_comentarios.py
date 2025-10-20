@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-06_comentarios.py
-
-Ejemplos de comentarios en Python (comentarios de línea y docstrings).
-"""
-
 # Comentario de una sola línea
 print("Este es un comentario de una sola línea: precede con #")
 
