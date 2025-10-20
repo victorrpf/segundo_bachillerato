@@ -107,6 +107,13 @@ Breve explicación:
 - Operadores aritméticos: `+`, `-`, `*`, `/`, `//`, `%`, `**`.
 - Operadores lógicos: `and`, `or`, `not`. Comparaciones: `==`, `!=`, `<`, `>`, `<=`, `>=`.
 
+Notas adicionales (según `07_expresiones.py`):
+
+- División `/` produce un `float` aunque ambos operandos sean enteros (p. ej. `10 / 3` -> `3.333...`).
+- División entera `//` descarta la parte fraccionaria (`10 // 3` -> `3`).
+- Operador módulo `%` devuelve el resto de la división entera (`10 % 3` -> `1`).
+- Potencia `**` eleva a la potencia (`10 ** 3` -> `1000`).
+
 08_sentencias.py
 
 Contenido: sentencias de control de flujo: `if/elif/else`, `for` y `while`.
