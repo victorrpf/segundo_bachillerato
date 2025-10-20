@@ -131,6 +131,24 @@ Breve explicación:
 
 - Las funciones permiten agrupar comportamiento reutilizable. Se definen con `def nombre(param):` y usan `return` para devolver valores.
 
+Sección 09 — `09_funciones.py` (nota_media)
+
+Contenido añadido en el script:
+
+- Definición de la función `nota_media(a, b, c)` que calcula la media aritmética de
+	tres notas y devuelve una tupla `(media, estado)` donde `estado` es `'aprobado'`
+	si la media >= 5 y `'suspenso'` en caso contrario.
+- Ejemplos de uso en el script:
+	- `print("Victor:", nota_media(5, 10, 7))` → muestra la tupla con media y estado.
+	- `print("María:", nota_media(6, 9, 4))`
+	- `print("Alberto:", nota_media(4, 4, 5))`
+
+Notas pedagógicas:
+
+- La función devuelve una tupla (p. ej. `(7.33, 'aprobado')`). Una tupla es inmutable
+	y es adecuada para devolver un pequeño conjunto de valores heterogéneos (aquí: número
+	y texto). Si quisieras una colección modificable usarías una lista (`[media, estado]`).
+
 
 Instrucciones de ejecución (Visual Studio Code / LliureX)
 
