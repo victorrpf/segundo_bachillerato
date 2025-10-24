@@ -1,5 +1,8 @@
-# Input
+# Input y suma
 
-numero = input("Ingrese un número: ")
+numero1 = int(input("Ingrese un número: "))
+numero2 = int(input("Ingrese otro número: "))
 
-print(numero)
+suma = numero1 + numero2
+
+print("La suma es:", suma)
