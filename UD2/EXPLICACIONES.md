@@ -5,8 +5,6 @@
 
 Contenido: ejemplos de cadenas y caracteres, incluyendo escapes (`\n`, `\t`), comillas, conversión entre caracteres y códigos (`ord`/`chr`) y uso de backspace (`\b`).
 
-Explicación adaptada al contenido actual del script:
-
 - Salto de línea (`\n`) y tabulación (`\t`): `print("Hola\nMundo\t➡\tTabulado")` muestra "Mundo" en la línea siguiente y usa una tabulación.
 - Comillas: se puede incluir `'` dentro de una cadena entre dobles comillas y viceversa; si hace falta, se escapan con `\`.
 - `ord(c)` y `chr(n)`: permiten convertir entre carácter y su código Unicode/ASCII.
@@ -17,8 +15,6 @@ Explicación adaptada al contenido actual del script:
 
 Contenido: ejemplos y reglas extraídas del script actual.
 
-Explicación adaptada al contenido del script:
-
 - Ejemplos válidos en Python (adaptados desde la tabla en C): `Numero`, `dia_del_mes`, `PINGUINO1`, `_ciudad`, `Z`.
 - Elementos no válidos o problemáticos: no se pueden usar identificadores que comiencen por dígitos (p. ej. `123`), no se permiten espacios ni símbolos como `*` en los nombres, y aunque Python admite Unicode (`ñ`, acentos), su uso no es recomendable en código didáctico por cuestiones de portabilidad.
 - Reglas clave:
@@ -26,16 +22,13 @@ Explicación adaptada al contenido del script:
 	2. Solo letras, dígitos y guion bajo en identificadores válidos (sin espacios ni símbolos).
 	3. Python admite identificadores Unicode, pero suele evitarse cuando se comparte código.
 
-Recomendaciones pedagógicas (incluidas en el script):
+Recomendaciones:
 - Usar `snake_case` para variables y funciones.
 - Reservar MAYÚSCULAS para constantes.
-
 
 03_palabras_reservadas.py
 
 Contenido: listado y explicación de las palabras reservadas del lenguaje.
-
-Breve explicación:
 
 - Las palabras reservadas (como `if`, `for`, `while`, `def`, `class`, `import`, etc.) tienen un significado sintáctico en Python y no pueden usarse como identificadores.
 - Usa `import keyword; keyword.kwlist` para ver la lista actual en la versión de Python instalada.
@@ -44,14 +37,9 @@ Breve explicación:
 
 Contenido: tipos básicos y ejemplos de variables y constantes.
 
-Breve explicación:
-
 - Tipos básicos: `int`, `float`, `str`, `bool`. Python es dinámico, la variable toma el tipo del valor asignado.
 - Conversión explícita entre tipos: `str()`, `int()`, `float()` y funciones como `round()` para redondear.
 - Constantes por convención: nombres en MAYÚSCULAS (p. ej. `PI = 3.14`), aunque Python no impone inmutabilidad.
-
-Notas adicionales (según `04_variables_constantes.py`):
-
 - `type(obj)` permite ver el tipo que Python infiere en tiempo de ejecución (p. ej. `type("María")` -> `<class 'str'>`).
 - Tipo booleano: `True` y `False` son valores del tipo `bool`. En el script aparece `aprobado = True` y se imprime su tipo con `type(aprobado)`.
 - `None` es el valor que representa 'sin valor' (similar a `null` en otros lenguajes). Su tipo es `NoneType` (`type(None)`).
@@ -61,32 +49,22 @@ Notas adicionales (según `04_variables_constantes.py`):
 
 Contenido: listas en Python (creación, acceso, métodos y comprehensions).
 
-Breve explicación:
-
 - Listas son colecciones ordenadas y mutables. Operaciones comunes: `append`, `pop`, indexación y slicing.
 - Comprehensions permiten construir listas de forma compacta: `[x*x for x in range(5)]`.
-
-Notas adicionales (según `05_arrays.py`):
-
 - Declaración simple: `frutas = ["plátano", "fresa", "cereza"]` crea una lista con tres elementos.
 - `append(x)` añade `x` al final de la lista: `frutas.append("naranja")`.
 - Indexación: `frutas[3]` accede al cuarto elemento (los índices empiezan en 0).
 - Heterogeneidad de tipos: las listas en Python pueden contener elementos de distinto tipo; por ejemplo, `frutas.append(1)` añade un entero a la lista de strings. Esto es permitido por diseño pero conviene evitar mezclar tipos si luego se procesan los elementos suponiendo un tipo concreto.
 
-Consejo didáctico:
+Consejo:
 - Para mantener código claro, procura que las listas sean homogéneas por convención (p. ej. `List[str]`), o valida/convierte los elementos al insertarlos.
 
 06_comentarios.py
 
 Contenido: comentarios de línea y docstrings.
 
-Breve explicación:
-
 - Los comentarios de línea usan `#` y se ignoran en la ejecución. Los docstrings (triple comillas) documentan módulos, funciones o clases.
 - Es buena práctica documentar las funciones con un docstring corto que explique su propósito y parámetros.
-
-Notas adicionales (según `06_comentarios.py`):
-
 - Comentario de una sola línea: comienza con `#` y sirve para explicar una línea o una idea breve.
 	- Ejemplo: `# Comentario de una sola línea`
 - Docstrings / cadenas multilínea: usando `""" ... """` o `''' ... '''` puedes escribir texto en varias líneas.
@@ -102,13 +80,8 @@ Recomendación:
 
 Contenido: expresiones y operadores aritméticos y lógicos.
 
-Breve explicación:
-
 - Operadores aritméticos: `+`, `-`, `*`, `/`, `//`, `%`, `**`.
 - Operadores lógicos: `and`, `or`, `not`. Comparaciones: `==`, `!=`, `<`, `>`, `<=`, `>=`.
-
-Notas adicionales (según `07_expresiones.py`):
-
 - División `/` produce un `float` aunque ambos operandos sean enteros (p. ej. `10 / 3` -> `3.333...`).
 - División entera `//` descarta la parte fraccionaria (`10 // 3` -> `3`).
 - Operador módulo `%` devuelve el resto de la división entera (`10 % 3` -> `1`).
@@ -118,8 +91,6 @@ Notas adicionales (según `07_expresiones.py`):
 
 Contenido: sentencias de control de flujo: `if/elif/else`, `for` y `while`.
 
-Breve explicación:
-
 - `if` permite ejecutar código condicionalmente; `for` itera sobre secuencias; `while` repite mientras la condición sea verdadera.
 - Evitar bucles infinitos y preferir `for` cuando se itera sobre colecciones.
 
@@ -127,14 +98,9 @@ Breve explicación:
 
 Contenido: introducción a la definición y uso de funciones con `def`.
 
-Breve explicación:
-
 - Las funciones permiten agrupar comportamiento reutilizable. Se definen con `def nombre(param):` y usan `return` para devolver valores.
 
-Sección 09 — `09_funciones.py` (nota_media)
-
-Contenido añadido en el script:
-
+Función nota_media:
 - Definición de la función `nota_media(a, b, c)` que calcula la media aritmética de
 	tres notas y devuelve una tupla `(media, estado)` donde `estado` es `'aprobado'`
 	si la media >= 5 y `'suspenso'` en caso contrario.
@@ -142,8 +108,6 @@ Contenido añadido en el script:
 	- `print("Victor:", nota_media(5, 10, 7))` → muestra la tupla con media y estado.
 	- `print("María:", nota_media(6, 9, 4))`
 	- `print("Alberto:", nota_media(4, 4, 5))`
-
-Notas pedagógicas:
 
 - La función devuelve una tupla (p. ej. `(7.33, 'aprobado')`). Una tupla es inmutable
 	y es adecuada para devolver un pequeño conjunto de valores heterogéneos (aquí: número
@@ -168,8 +132,6 @@ o redondeamos la salida (`round(raiz_cubica, 5)`).
 12_coseno.py
 
 Contenido: cálculo del coseno de un ángulo expresado en grados.
-
-Explicación adaptada al contenido del script:
 
 - `import math` habilita el acceso a funciones trigonométricas y a la constante `math.pi`.
 - Primer bloque: `math.radians(angulo_grados)` convierte directamente de grados a radianes.
