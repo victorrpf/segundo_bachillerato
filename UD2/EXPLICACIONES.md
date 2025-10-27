@@ -165,22 +165,25 @@ añade la corrección para normalizar el resultado (`4.0`). Si la raíz produce 
 máxima precisión o queramos evitar esas aproximaciones, usamos funciones del módulo `math`
 o redondeamos la salida (`round(raiz_cubica, 5)`).
 
+12_coseno.py
+
+Contenido: cálculo del coseno de un ángulo expresado en grados.
+
+Explicación adaptada al contenido del script:
+
+- `import math` habilita el acceso a funciones trigonométricas y a la constante `math.pi`.
+- Primer bloque: `math.radians(angulo_grados)` convierte directamente de grados a radianes.
+- Segundo bloque: reproduce la fórmula vista en el libro, multiplicando por π/180 (`angulo_grados * PI / 180`). Aquí `PI` se fija con un literal flotante (`3.14159265`).
+- Ambos caminos obtienen el mismo valor para `math.cos(angulo_radianes)`.
+- La diferencia es didáctica (usar la utilidad de la librería frente a aplicar la fórmula manualmente).
+
 
 Instrucciones de ejecución (Visual Studio Code / LliureX)
 
 Abre la carpeta del proyecto en Visual Studio Code y usa el terminal integrado (Ver > Terminal). Sitúate en la carpeta `UD2` si es necesario y ejecuta:
 
 ```bash
-# Ejecutar los scripts desde la terminal integrada
-python 01_caracteres.py
-python 02_identificadores.py
-python 03_palabras_reservadas.py
-python 04_variables_constantes.py
-python 05_arrays.py
-python 06_comentarios.py
-python 07_expresiones.py
-python 08_sentencias.py
-python 09_funciones.py
+python <nombre_del_script>
 ```
 
 Notas:
