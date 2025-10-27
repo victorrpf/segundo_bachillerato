@@ -149,6 +149,23 @@ Notas pedagógicas:
 	y es adecuada para devolver un pequeño conjunto de valores heterogéneos (aquí: número
 	y texto). Si quisieras una colección modificable usarías una lista (`[media, estado]`).
 
+10_input.py
+
+Contenido: pedir dos enteros por teclado con `input()`, convertirlos con `int()` y mostrar
+la suma. Refuerza el flujo `input → conversión → operación → print`.
+
+11_raiz_cubica.py
+
+Contenido: cálculo de la raíz cúbica de un número dado. Un *módulo* de Python es un
+archivo con funciones reutilizables. Para usarlo se importa con `import math`. Sin `math`,
+`numero ** (1/3)` se calcula con tipo `float`. Los `float` guardan una cantidad limitada de
+decimales porque la memoria se almacena en binario. Cuando la raíz no cabe exacta, la
+operación se aproxima (por ejemplo, con 64 aparece `3.9999999999999996`). `math.cbrt(numero)`
+añade la corrección para normalizar el resultado (`4.0`). Si la raíz sí es representable,
+como en 27 → `3`, ambas versiones coinciden. Cuando el cálculo requiera
+máxima precisión o queramos evitar esas aproximaciones, usamos funciones del módulo `math`
+o redondeamos la salida (`round(raiz_cubica, 5)`).
+
 
 Instrucciones de ejecución (Visual Studio Code / LliureX)
 
