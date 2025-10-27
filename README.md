@@ -13,6 +13,9 @@ UD2 - Archivos incluidos:
 - `07_expresiones.py`: Expresiones y operadores.
 - `08_sentencias.py`: Sentencias (condicionales y bucles).
 - `09_funciones.py`: Introducción a funciones.
+- `10_input.py`: Lectura de datos por teclado y suma de enteros.
+- `11_raiz_cubica.py`: Raíz cúbica con `** (1/3)` y `math.cbrt`.
+- `12_coseno.py`: Coseno de un ángulo en grados convertidos a radianes.
 
 Notas:
 - Comprueba la versión de Python con `python --version`.
