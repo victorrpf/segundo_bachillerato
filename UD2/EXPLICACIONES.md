@@ -161,8 +161,7 @@ archivo con funciones reutilizables. Para usarlo se importa con `import math`. S
 `numero ** (1/3)` se calcula con tipo `float`. Los `float` guardan una cantidad limitada de
 decimales porque la memoria se almacena en binario. Cuando la raíz no cabe exacta, la
 operación se aproxima (por ejemplo, con 64 aparece `3.9999999999999996`). `math.cbrt(numero)`
-añade la corrección para normalizar el resultado (`4.0`). Si la raíz sí es representable,
-como en 27 → `3`, ambas versiones coinciden. Cuando el cálculo requiera
+añade la corrección para normalizar el resultado (`4.0`). Si la raíz produce un número que el tipo `float` puede almacenar sin redondeos, como en 27 → `3`, ambas versiones coinciden. Cuando el cálculo requiera
 máxima precisión o queramos evitar esas aproximaciones, usamos funciones del módulo `math`
 o redondeamos la salida (`round(raiz_cubica, 5)`).
 
