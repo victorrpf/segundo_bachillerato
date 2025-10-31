@@ -139,6 +139,15 @@ Contenido: cálculo del coseno de un ángulo expresado en grados.
 - Ambos caminos obtienen el mismo valor para `math.cos(angulo_radianes)`.
 - La diferencia es didáctica (usar la utilidad de la librería frente a aplicar la fórmula manualmente).
 
+13_switch.py
+
+Contenido: clasificación de una nota numérica usando `match-case`, la estructura equivalente al switch en Python 3.10+.
+
+- Se pide al usuario una nota entre 0 y 10 y se convierte a `float`.
+- `match nota` usa guardas (`case nota if ...`) para detectar valores fuera de rango, suspensos (`< 5`), aprobados (`< 9`) y sobresalientes (resto de casos).
+- `case _` actúa como cláusula por defecto cuando ningún caso previo coincide.
+- Es un ejemplo directo para mostrar cómo `match` reemplaza al `switch` clásico en versiones modernas de Python.
+
 
 Instrucciones de ejecución (Visual Studio Code / LliureX)
 
