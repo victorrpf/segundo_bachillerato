@@ -16,6 +16,7 @@ UD2 - Archivos incluidos:
 - `10_input.py`: Lectura de datos por teclado y suma de enteros.
 - `11_raiz_cubica.py`: Raíz cúbica con `** (1/3)` y `math.cbrt`.
 - `12_coseno.py`: Coseno de un ángulo en grados convertidos a radianes.
+- `13_switch.py`: En python se usa match-case.
 
 Notas:
 - Comprueba la versión de Python con `python --version`.
