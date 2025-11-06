@@ -18,6 +18,7 @@ UD2 - Archivos incluidos:
 - `12_coseno.py`: Coseno de un ángulo en grados convertidos a radianes.
 - `13_switch.py`: En python se usa match-case.
 - `14_tablas_o_matrices.py`: Tabla bidimensional con listas anidadas para nombres e identificaciones.
+- `15_diccionario.py`: Diccionario con listas asociadas para almacenar y mostrar usuarios.
 
 Notas:
 - Comprueba la versión de Python con `python --version`.
