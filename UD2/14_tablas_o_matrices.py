@@ -17,6 +17,9 @@ for i in range(tamaño):
     # La segunda lista es para las identificaciones
     usuarios[1].append(identificación)
 
+# Agregamos una línea en blanco antes de mostrar los datos
+print()
+
 # Ahora mostremos los valores en la tabla
 for i in range(tamaño):
     print("Mostrando los datos de la persona", i + 1)
