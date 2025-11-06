@@ -17,6 +17,7 @@ UD2 - Archivos incluidos:
 - `11_raiz_cubica.py`: Raíz cúbica con `** (1/3)` y `math.cbrt`.
 - `12_coseno.py`: Coseno de un ángulo en grados convertidos a radianes.
 - `13_switch.py`: En python se usa match-case.
+- `14_tablas_o_matrices.py`: Tabla bidimensional con listas anidadas para nombres e identificaciones.
 
 Notas:
 - Comprueba la versión de Python con `python --version`.
