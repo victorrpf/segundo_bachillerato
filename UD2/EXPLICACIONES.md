@@ -157,9 +157,14 @@ Contenido: almacenamiento bidimensional usando listas anidadas (`usuarios = [[],
 - Al final, otro bucle recorre los índices y muestra los valores guardados en la tabla con acceso por posición (`usuarios[0][i]`).
 - Sirve de introducción a tablas/matrices antes de ver estructuras como listas de diccionarios o `pandas`.
 
-14_tablas_o_matrices.py
+15_diccionario.py
 
+Contenido: uso de diccionarios con listas asociadas para almacenar registros.
 
+- `usuarios` define dos claves (`"nombres"` y `"identificaciones"`), cada una con una lista vacía que se rellenará dinámicamente.
+- Un bucle `for` solicita los pares nombre/identificación y los añade a la lista correspondiente mediante `append`.
+- Tras una línea en blanco, un segundo bucle recorre los índices para mostrar cada entrada combinando acceso por clave y posición (`usuarios["nombres"][i]`).
+- Es el primer contacto con estructuras asociativas, donde las claves actúan como etiquetas legibles frente a los índices numéricos de las listas.
 
 
 Instrucciones de ejecución (Visual Studio Code / LliureX)
