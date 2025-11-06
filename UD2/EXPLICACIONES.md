@@ -148,6 +148,19 @@ Contenido: clasificación de una nota numérica usando `match-case`, la estructu
 - `case _` actúa como cláusula por defecto cuando ningún caso previo coincide.
 - Es un ejemplo directo para mostrar cómo `match` reemplaza al `switch` clásico en versiones modernas de Python.
 
+14_tablas_o_matrices.py
+
+Contenido: almacenamiento bidimensional usando listas anidadas (`usuarios = [[], []]`).
+
+- Se prepara una tabla manual con dos listas: una para nombres y otra para identificaciones.
+- `tamaño` fija cuántos registros se solicitarán; el bucle `for` recoge cada par nombre/identificación con `input()` y los añade con `append`.
+- Al final, otro bucle recorre los índices y muestra los valores guardados en la tabla con acceso por posición (`usuarios[0][i]`).
+- Sirve de introducción a tablas/matrices antes de ver estructuras como listas de diccionarios o `pandas`.
+
+14_tablas_o_matrices.py
+
+
+
 
 Instrucciones de ejecución (Visual Studio Code / LliureX)
 
