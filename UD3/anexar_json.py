@@ -24,4 +24,3 @@ print("Nuevos precios agregados al archivo 'precios.json' con éxito.")
 # 'w' - escritura (sobrescribe el archivo si ya existe)
 # 'a' - anexar (agrega contenido al final del archivo si ya existe)
 # 'x' - creación exclusiva (crea un archivo nuevo, falla si el archivo ya existe)
-
