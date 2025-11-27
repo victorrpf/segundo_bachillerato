@@ -8,7 +8,7 @@ with open('precios.json', 'r') as file:
 # Nuevos precios que queremos agregar al diccionario existente
 nuevo_precio = {
     "id": 4,
-    "precio_4": 400,
+    "precio": 400,
 }
 
 # Actualizar el diccionario con las nuevas entradas

@@ -6,15 +6,15 @@ dictionary = {
   "lista": [
     {
       "id": 1,
-      "precio_1": 100,
+      "precio": 100,
     },
     {
       "id": 2,
-      "precio_2": 200,
+      "precio": 200,
     },
     {
       "id": 3,
-      "precio_3": 300,
+      "precio": 300,
     }
   ]
 }
