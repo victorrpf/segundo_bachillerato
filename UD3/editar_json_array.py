@@ -1,22 +1,35 @@
+# Importar el módulo json para trabajar con archivos JSON
 import json
 
-# Abrir el archivo JSON y cargar los datos
-with open('precios.json', 'r', encoding='utf-8') as file:
-    datos = json.load(file)
+# Leer el contenido actual del archivo JSON
+with open('precios.json', 'r') as file:
+    precios = json.load(file)
 
-# Buscar el elemento con el id que queremos editar
-id_a_editar = 3
-nuevo_precio = 350
-for elemento in datos["lista"]:
-    if elemento["id"] == id_a_editar:
-        elemento["precio"] = nuevo_precio
-        break
-else:
-    print(f"No se encontró un elemento con id {id_a_editar}")
-    exit()
+# Precios que queremos editar del diccionario existente
+editar_precio = {
+    "id": 4,
+    "precio": 400,
+}
 
-# Guardar nuevamente la lista actualizada en el archivo JSON
-with open('precios.json', 'w', encoding='utf-8') as file:
-    json.dump(datos, file, indent=4)
+# Usamos el método remove para eliminar un precio del array 'lista'
+precios["lista"].remove(editar_precio)
 
-print(f"Elemento con id {id_a_editar} actualizado a precio {nuevo_precio}")
+# Agregar el precio eliminado con los nuevos valores
+editar_precio_actualizado = {
+    "id": 4,
+    "precio": 450,
+}
+
+# Usamos el método append para agregar el nuevo precio al array 'lista'
+precios["lista"].append(editar_precio_actualizado)
+
+# Guardar nuevamente el diccionario completo en el archivo JSON
+with open('precios.json', 'w') as file:
+    json.dump(precios, file)
+    print("Precios editados del archivo 'precios.json' con éxito.")
+
+# Modos de escritura de archivos:
+# 'r' - lectura (predeterminado) 
+# 'w' - escritura (sobrescribe el archivo si ya existe)
+# 'a' - anexar (agrega contenido al final del archivo si ya existe)
+# 'x' - creación exclusiva (crea un archivo nuevo, falla si el archivo ya existe)
