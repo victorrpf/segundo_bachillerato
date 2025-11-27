@@ -11,7 +11,7 @@ eliminar_precio = {
     "precio": 400,
 }
 
-# Usamos el método para eliminar un precio del array 'lista'
+# Usamos el método remove para eliminar un precio del array 'lista'
 precios["lista"].remove(eliminar_precio)
 
 # Guardar nuevamente el diccionario completo en el archivo JSON
