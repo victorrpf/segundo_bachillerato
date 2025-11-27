@@ -18,7 +18,7 @@ precios.update(nuevo_precio)
 # Guardar nuevamente el diccionario completo en el archivo JSON
 with open('precios.json', 'w') as file:
     json.dump(precios, file)
-print("Nuevos precios agregados al archivo 'precios.json' con éxito.")
+    print("Nuevos precios agregados al archivo 'precios.json' con éxito.")
 
 # Modos de escritura de archivos:
 # 'r' - lectura (predeterminado)
