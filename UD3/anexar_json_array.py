@@ -12,6 +12,7 @@ nuevo_precio = {
 }
 
 # Actualizar el diccionario con las nuevas entradas
+# Usamos el método append para agregar el nuevo precio al array 'lista'
 precios["lista"].append(nuevo_precio)
 
 # Guardar nuevamente el diccionario completo en el archivo JSON

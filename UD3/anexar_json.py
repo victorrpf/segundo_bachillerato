@@ -12,6 +12,7 @@ nuevo_precio = {
 }
 
 # Actualizar el diccionario con las nuevas entradas
+# Usamos el método update para agregar las nuevas claves y valores
 precios.update(nuevo_precio)
 
 # Guardar nuevamente el diccionario completo en el archivo JSON
