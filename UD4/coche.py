@@ -10,7 +10,7 @@ class Coche:
   tipo = "vehículo de cuatro ruedas"
   ruedas = 4
 
-  # método especial que es el que construye el objeto
+  # método especial que es el que construye el objeto: el constructor
   # se llama automáticamente este método cuando creas la instancia
   def __init__(self, marca, modelo, color):
     # atributos de la instancia
