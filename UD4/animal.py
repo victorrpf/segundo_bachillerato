@@ -15,12 +15,14 @@ class Animal:
 
     # Método genérico con la misma implementación
     def describeme(self):
-        print("Soy un Animal del tipo", type(self).__name__)
+        print("Soy un Animal del tipo", type(self).__name__) # Devuelve el nombre de la clase
 
 # Perro hereda de Animal
 class Perro(Animal):
+    # Implementación específica del método hablar
     def hablar(self):
-        print("Guau!")
+        print("Guau!")    
+    # Implementación específica del método moverse
     def moverse(self):
         print("Caminando con 4 patas")
 
@@ -42,6 +44,7 @@ class Abeja(Animal):
     def picar(self):
         print("Picar!")
 
+# Crear instancias de las clases derivadas
 mi_perro = Perro('mamífero', 10)
 mi_vaca = Vaca('mamífero', 23)
 mi_abeja = Abeja('insecto', 1)
