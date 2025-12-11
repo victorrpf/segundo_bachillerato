@@ -63,21 +63,21 @@ finally:
 
 # Se intenta abrir un fichero y se captura una posible excepción
 try:
-    with open('fichero.txt') as file:
+    with open("fichero.txt") as file:
         read_data = file.read()
 # Excepción de tipo OSError si el fichero no existe
 except OSError:
-    print('OSError. No se pudo abrir')
+    print("OSError. No se pudo abrir")
 
 # ValueError al convertir una cadena no numérica a entero
 try:
-    x = int(input("Enter a number: "))
+    x = int(input("Escribe un número: "))
 except ValueError:
-    print("That wasn’t a number.")
+    print("Eso no era un número.")
 else:
-    print("You entered", x)
+    print("Has escrito", x)
 finally:
-    print("Done.")
+    print("Hecho.")
 
 """
 try:
