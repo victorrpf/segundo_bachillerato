@@ -44,32 +44,40 @@ except TypeError:
 
 try:
     d = 2 + "Hola" # Si comentas esto entra en ZeroDivisionError
-except Exception:
-    print("Ha habido una excepción", type(Exception))
+except Exception as ex:
+    print("Ha habido una excepción", type(ex))
     # Ha habido una excepción <class 'TypeError'>
-
-try:
-    # La división puede realizarse sin problema
-    x = 2/2
-except:
-    print("Entra en except, ha ocurrido una excepción")
-else:
-    print("Entra en else, no ha ocurrido ninguna excepción")
-
-#Entra en else, no ha ocurrido ninguna excepción
 
 try:
     # Forzamos excepción
     x = 2/0
 except:
-    # Se entra ya que ha habido una excepción
+    # Si entra en except, no entra en else
     print("Entra en except, ha ocurrido una excepción")
+else:
+    # Si entra en else, no entra en except
+    print("Entra en el else, no ha ocurrido ninguna excepción")
 finally:
     # También entra porque finally es ejecutado siempre
     print("Entra en finally, se ejecuta el bloque finally")
 
-#Entra en except, ha ocurrido una excepción
-#Entra en finally, se ejecuta el bloque finally
+# Se intenta abrir un fichero y se captura una posible excepción
+try:
+    with open("fichero.txt") as file:
+        read_data = file.read()
+# Excepción de tipo OSError si el fichero no existe
+except OSError:
+    print("OSError. No se pudo abrir")
+
+# ValueError al convertir una cadena no numérica a entero
+try:
+    x = int(input("Escribe un número: "))
+except ValueError:
+    print("Eso no era un número.")
+else:
+    print("Has escrito", x)
+finally:
+    print("Hecho.")
 
 """
 try:
