@@ -30,7 +30,7 @@ except ZeroDivisionError:
 
 # Aquí manejamos NameError sin raise adicional, mientras que el bloque de líneas 17-23 vuelve a lanzar la excepción para detener la ejecución.
 try:
-    print(valor_inesistente)
+    print(valor_inexistente)
 except NameError:
     print("No se ha podido acceder a la variable")
 
