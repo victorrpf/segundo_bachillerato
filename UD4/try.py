@@ -16,7 +16,7 @@ except:
 
 try:
     # Forzamos NameError usando una variable no definida
-    print(valor_inesistente)
+    print(valor_inexistente)
 except:
     print("Capturamos el NameError antes del raise")
     #raise NameError("Relanzamos NameError con información personalizada")
