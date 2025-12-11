@@ -16,7 +16,7 @@ except:
 
 try:
     # Forzamos NameError usando una variable no definida
-    print(valor_inesistente)
+    print(valor_inexistente)
 except:
     print("Capturamos el NameError antes del raise")
     #raise NameError("Relanzamos NameError con información personalizada")
@@ -30,7 +30,7 @@ except ZeroDivisionError:
 
 # Aquí manejamos NameError sin raise adicional, mientras que el bloque de líneas 17-23 vuelve a lanzar la excepción para detener la ejecución.
 try:
-    print(valor_inesistente)
+    print(valor_inexistente)
 except NameError:
     print("No se ha podido acceder a la variable")
 
@@ -44,8 +44,8 @@ except TypeError:
 
 try:
     d = 2 + "Hola" # Si comentas esto entra en ZeroDivisionError
-except Exception as ex:
-    print("Ha habido una excepción", type(ex))
+except Exception:
+    print("Ha habido una excepción", type(Exception))
     # Ha habido una excepción <class 'TypeError'>
 
 try:
