@@ -6,3 +6,5 @@ pwd = getpass.getpass("Contraseña: ")
 
 # Calcular y mostrar el hash SHA-256 de la contraseña ingresada
 print(hashlib.sha256(pwd.encode("utf-8")).hexdigest())
+
+# El hash se puede usar para almacenar contraseñas de forma segura porque no es reversible
